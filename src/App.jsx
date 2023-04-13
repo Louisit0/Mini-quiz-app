@@ -25,7 +25,7 @@ function App() {
           isCorrect: false,
         },
       ],
-      img: "https://logodownload.org/wp-content/uploads/2020/07/tesla-logo.png",
+      img: "https://electrek.co/wp-content/uploads/sites/3/2021/05/Tesla-Logo-Hero.jpg?quality=82&strip=all&w=1024",
     },
     {
       id: 2,
@@ -48,30 +48,30 @@ function App() {
           isCorrect: false,
         },
       ],
-      img: "https://logodownload.org/wp-content/uploads/2020/07/tesla-logo.png",
+      img: "https://a.cdn-hotels.com/gdcs/production0/d1645/0c67ff64-cf54-4886-91dd-89aa601463af.jpg",
     },
     {
       id: 3,
-      questionText: "Who is the author of 'The Catcher in the Rye'?",
+      questionText: "Who is the author of 'Harry Potter'?",
       options: [
         {
-          answerText: "J.K. Rowling",
+          answerText: "F. Scott Fitzgerald",
           isCorrect: false,
         },
         {
           answerText: "J.D. Salinger",
-          isCorrect: true,
+          isCorrect: false,
         },
         {
           answerText: "Ernest Hemingway",
           isCorrect: false,
         },
         {
-          answerText: "F. Scott Fitzgerald",
-          isCorrect: false,
+          answerText: "J.K. Rowling",
+          isCorrect: true,
         },
       ],
-      img: "https://logodownload.org/wp-content/uploads/2020/07/tesla-logo.png",
+      img: "https://www.tribunadesanluis.com.mx/gossip/toyc1z-harry-potter/ALTERNATES/LANDSCAPE_1140/harry%20potter",
     },
     {
       id: 4,
@@ -94,7 +94,7 @@ function App() {
           isCorrect: false,
         },
       ],
-      img: "https://logodownload.org/wp-content/uploads/2020/07/tesla-logo.png",
+      img: "https://media.architecturaldigest.com/photos/5af30475c29da93330bbfe90/16:9/w_2560%2Cc_limit/GettyImages-478627080.jpg",
     },
   ];
 
