@@ -33,7 +33,7 @@ function App() {
       options: [
         {
           answerText: "Sydney",
-          isCorrect: false,
+          isCorrect: true,
         },
         {
           answerText: "Melbourne",
@@ -41,7 +41,7 @@ function App() {
         },
         {
           answerText: "Canberra",
-          isCorrect: true,
+          isCorrect: false,
         },
         {
           answerText: "Brisbane",
