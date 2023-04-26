@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { IoReloadOutline } from "react-icons/io5";
 
 const Questions = ({ quizQuestions }) => {
   const [numQuestion, setNumQuestion] = useState(0);
@@ -11,9 +12,13 @@ const Questions = ({ quizQuestions }) => {
     setNumQuestion(numQuestion + 1);
   };
 
+  const reloadQuiz = () => {
+    setNumQuestion(0);
+    setAnswers(0);
+  };
+
   return (
     <div className="w-4/5 h-full my-28 mx-auto md:m-auto md:w-1/2 md:h-1/2 bg-zinc-800 rounded-xl flex flex-col md:flex-row">
-      {/* Desde aca va el conditional rendering */}
       {numQuestion < quizQuestions.length ? (
         <>
           <div className="w-full md:w-1/2 text-center mt-6">
@@ -59,6 +64,12 @@ const Questions = ({ quizQuestions }) => {
               questions correctly! ⭐
             </p>
           </div>
+          <button
+            onClick={reloadQuiz}
+            className="py-2 px-4 bg-gray-100 rounded-full mt-5"
+          >
+            <IoReloadOutline size={24} />
+          </button>
         </div>
       ) : answers === 0 ? (
         <div className="flex items-center justify-center flex-grow flex-col">
@@ -75,6 +86,12 @@ const Questions = ({ quizQuestions }) => {
               questions correctly! ⭐
             </p>
           </div>
+          <button
+            onClick={reloadQuiz}
+            className="py-2 px-4 bg-gray-100 rounded-full mt-5"
+          >
+            <IoReloadOutline size={24} />
+          </button>
         </div>
       ) : (
         <div className="flex items-center justify-center flex-grow flex-col">
@@ -90,6 +107,12 @@ const Questions = ({ quizQuestions }) => {
               questions correctly! ⭐
             </p>
           </div>
+          <button
+            onClick={reloadQuiz}
+            className="py-2 px-4 bg-gray-100 rounded-full mt-5"
+          >
+            <IoReloadOutline size={24} />
+          </button>
         </div>
       )}
     </div>
