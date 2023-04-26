@@ -45,22 +45,53 @@ const Questions = ({ quizQuestions }) => {
             </ul>
           </div>
         </>
+      ) : answers === 4 ? (
+        <div className="flex items-center justify-center flex-grow flex-col">
+          <div className="w-4/5">
+            <h2 className="text-white text-center text-3xl md:text-5xl">
+              ¡Awesome job! You nailed it! 🎉
+            </h2>
+          </div>
+          <div>
+            <p className="text-2xl mt-4 text-center text-blue-400 font-bold">
+              You answered <span className="text-white">{answers}</span> out of{" "}
+              <span className="text-white">{quizQuestions.length}</span>{" "}
+              questions correctly! ⭐
+            </p>
+          </div>
+        </div>
+      ) : answers === 0 ? (
+        <div className="flex items-center justify-center flex-grow flex-col">
+          <div className="w-4/5">
+            <h2 className="text-white text-center text-3xl md:text-4xl">
+              It seems like your answers are from an alternate universe. Keep
+              trying, you'll get it in the next attempt! 😅
+            </h2>
+          </div>
+          <div>
+            <p className="text-2xl mt-4 text-center text-blue-400 font-bold">
+              You answered <span className="text-white">{answers}</span> out of{" "}
+              <span className="text-white">{quizQuestions.length}</span>{" "}
+              questions correctly! ⭐
+            </p>
+          </div>
+        </div>
       ) : (
         <div className="flex items-center justify-center flex-grow flex-col">
-          <div>
-            <h2 className="text-white text-center text-3xl md:text-5xl">
+          <div className="w-4/5">
+            <h2 className="text-white text-center text-3xl md:text-4xl">
               Congrats! you finished the game 🥳
             </h2>
           </div>
           <div>
             <p className="text-2xl mt-4 text-center text-blue-400 font-bold">
-              Respondiste bien {answers} de {quizQuestions.length} preguntas!
+              You answered <span className="text-white">{answers}</span> out of{" "}
+              <span className="text-white">{quizQuestions.length}</span>{" "}
+              questions correctly! ⭐
             </p>
           </div>
         </div>
       )}
-
-      {/* Aca acaba el CR */}
     </div>
   );
 };
