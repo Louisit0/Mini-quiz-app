@@ -18,7 +18,7 @@ const Questions = ({ quizQuestions }) => {
   };
 
   return (
-    <div className="w-4/5 h-full my-28 mx-auto md:m-auto md:w-1/2 md:h-1/2 bg-zinc-800 rounded-xl flex flex-col md:flex-row">
+    <div className="w-4/5 h-full my-10 mx-auto md:m-auto md:w-1/2 md:h-1/2 bg-zinc-800 rounded-xl flex flex-col md:flex-row">
       {numQuestion < quizQuestions.length ? (
         <>
           <div className="w-full md:w-1/2 text-center mt-6">
