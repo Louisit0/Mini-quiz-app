@@ -40,7 +40,7 @@ const Questions = ({ quizQuestions }) => {
               {quizQuestions[numQuestion].options.map((option, index) => (
                 <li className="text-white text-xl" key={index}>
                   <button
-                    className="py-2 w-3/4 border-2 rounded-md hover:bg-gray-600 focus:animate-pulse focus:bg-blue-500"
+                    className="py-2 w-3/4 border-2 rounded-md hover:bg-gray-600 active:animate-pulse active:bg-blue-500"
                     onClick={() => submitAnswer(index)}
                   >
                     {option.answerText}
